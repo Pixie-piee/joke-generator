@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke generator</title>
+    <style>
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 400px;
+        }
+        .heading{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(250, 10, 198);
+            padding: 20px;
+        }
+
+        .joke{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*position: absolute;*/
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+        #button{
+            color: rgb(0, 0, 0);
+        }
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(233, 185, 228);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h1 class="heading">Refresh to <br/><span style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic; color: blueviolet; " >Generate a Joke</span></h1>
+        <br/><p class="joke"><%=content%></p>
+        <button id="button" onclick="window.location.href='/getjoke'">get joke</button>
+    </div>
+</body>
+</html>
